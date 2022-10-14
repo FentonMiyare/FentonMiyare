@@ -59,7 +59,6 @@ app.get('/terms', function(req, res){
 	 res.render('terms', { title: 'Terms'});
 	});
 	
-	
 	// POST
 /*
 app.post('/submit-form', urlencodedParser, function(req, res){
