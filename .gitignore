@@ -6,7 +6,7 @@
 
 .env
 
-node_modules
+/node_modules
 
 .DS_Store
-.prettierignore
+.prettierignore.env
