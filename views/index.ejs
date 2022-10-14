@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Project -->
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="my__image">
+              <!--img srcset="./image/image-victor-glover.png" src="./image/image-victor-glover.png" alt="profile image"-->
+              <img
+                srcset="/image/home_profile_pic.png"
+                src="/image/side_profile_pic.png"
+                alt="side profile pic"
+              />
+            </div>
+            <div class="header__wrapper">
+              <h1 class="small__header">Hello, I'm Fenton</h1>
+              <h2 class="main__header">Freelance Web Developer</h2>
+              <p>
+                Welcome to my home page! Here, I offer an array of web-related
+                services to potential clients and the web community. I'm a
+                full-stack software and web developer. I'm enthusiastic about
+                programming and all things related. I duly hope that, you can
+                find me as a resource to help you start/improve on your
+                projects.
+              </p>
+              <div class="main__btn">
+                <a class="btn" href="/about">About Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <%- include("./partials/nav.ejs") %>
+
+      <main>
+        <section class="second">
+          <div class="rectangle"></div>
+          <div class="container">
+            <h2>SERVICES</h2>
+            <div class="row">
+              <div class="card">
+                <div>
+                  <i>
+                    <img
+                      class="svg"
+                      srcset="./svg/photo-camera-photograph-svgrepo-com.svg"
+                      src="./svg/photo-camera-photograph-svgrepo-com.svg"
+                      alt="svg"
+                    />
+                  </i>
+                  <h3>UX/UI Research</h3>
+                  <p>
+                    Get Ready Designs and Life-Changing User Experiences for
+                    Digital Products and Websites.
+                  </p>
+                  <a href="/services"
+                    >KNOW MORE <span class="pointer">&raquo;</span></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <i>
+                    <img
+                      class="svg"
+                      srcset="./svg/pen-writer-svgrepo-com.svg"
+                      src="./svg/pen-writer-svgrepo-com.svg"
+                      alt="svg"
+                    />
+                  </i>
+                  <h3>Web Development</h3>
+                  <p>
+                    Get the right customers and return on investments through my
+                    expertise and Experience.
+                  </p>
+                  <a href="/services"
+                    >KNOW MORE <span class="pointer">&raquo;</span></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <i>
+                    <img
+                      class="svg"
+                      srcset="./svg/painting-paint-svgrepo-com.svg"
+                      src="./svg/painting-paint-svgrepo-com.svg"
+                      alt="svg"
+                    />
+                  </i>
+                  <h3>Branding</h3>
+                  <p>
+                    Get all sorts of branding and 3D signages, exhibition
+                    displays, vehicle branding, logo designs, brochures etc
+                  </p>
+                  <a href="/services"
+                    >KNOW MORE <span class="pointer">&raquo;</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--/div>
+      </section>
+      <section-->
+            <div class="experience">
+              <div>
+                <h2><span>12</span> Years Experience</h2>
+              </div>
+              <div class="row2">
+                <div><span>60+</span> Clients</div>
+                <div><span>08</span> Years Experience</div>
+                <div><span>122+</span> Completed Projects</div>
+                <div><span>10</span> Achievements</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row title__h2">
+              <div>
+                <h2>FEATURED PROJECTS</h2>
+                <p>
+                  Below are some of my work inweb development perfomed for
+                  various clients.
+                </p>
+              </div>
+              <div>
+                <a class="btn" href="/project">VIEW ALL</a>
+              </div>
+            </div>
+            <div class="row feartured_proj">
+              <div class="tile">
+                <div class="box">
+                  <!--img
+                    srcset="/image/gettyimages-672152265-2048x2048.webp"
+                    src="/image/gettyimages-672152265-2048x2048.webp"
+                    alt="project 1"
+                  />
+                  <a href="http://">
+                    <img
+                      src="https://images.unsplash.com/photo-1516849677043-ef67c9557e16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                      alt="Space exploration"
+                      srcset=""
+                    />
+                  </a-->
+                  <a href="http://">
+                    <img
+                      srcset="
+                        https://images.unsplash.com/photo-1516849677043-ef67c9557e16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 300w,
+                        https://images.unsplash.com/photo-1516849677043-ef67c9557e16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 320w,
+                        https://images.unsplash.com/photo-1516849677043-ef67c9557e16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80 400w
+                      "
+                      sizes="(max-width: 710px) 300px,
+                    (max-width: 991px) 320px,
+                    400px"
+                    />
+                  </a>
+                </div>
+                <h3>Space Travel</h3>
+                <a href="/project"
+                  >KNOW MORE <span class="pointer">&raquo;</span></a
+                >
+              </div>
+              <div class="tile">
+                <div class="box">
+                  <!--img
+                    srcset="/image/gettyimages-672152275-2048x2048.webp"
+                    src="/image/gettyimages-672152275-2048x2048.webp"
+                    alt="project 1"
+                  /-->
+                  <a href="/project">
+                    <img
+                      srcset="
+                        https://images.unsplash.com/photo-1621880113549-7b40fdaf5e7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 300w,
+                        https://images.unsplash.com/photo-1621880113549-7b40fdaf5e7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 320w,
+                        https://images.unsplash.com/photo-1621880113549-7b40fdaf5e7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 400w
+                      "
+                      sizes="(max-width: 710px) 300px,
+                        (max-width: 991px) 320px,
+                        400px"
+                    />
+                  </a>
+                </div>
+                <h3>TheTop</h3>
+                <a href="/project"
+                  >KNOW MORE <span class="pointer">&raquo;</span></a
+                >
+              </div>
+              <div class="tile">
+                <div class="box">
+                  <!--img
+                    srcset="/image/gettyimages-672152277-2048x2048.webp"
+                    src="/image/gettyimages-672152277-2048x2048.webp"
+                    alt="project 1"
+                  /-->
+                  <a href="/project">
+                    <img
+                      srcset="
+                        https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 300w,
+                        https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 320w,
+                        https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 400w
+                      "
+                      sizes="(max-width: 710px) 300px,
+                        (max-width: 991px) 320px,
+                        400px"
+                    />
+                  </a>
+                </div>
+                <h3>ToDo App</h3>
+                <a href="/project"
+                  >KNOW MORE <span class="pointer">&raquo;</span></a
+                >
+              </div>
+              <div class="tile">
+                <div class="box">
+                  <!--img
+                    srcset="/image/gettyimages-672152279-2048x2048.webp"
+                    src="/image/gettyimages-672152279-2048x2048.webp"
+                    alt="project 1"
+                  /-->
+                  <a href="/project">
+                    <img
+                      srcset="
+                        https://images.unsplash.com/photo-1608111283390-2e333b9b279c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 300w,
+                        https://images.unsplash.com/photo-1608111283390-2e333b9b279c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 320w,
+                        https://images.unsplash.com/photo-1608111283390-2e333b9b279c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 400w
+                      "
+                      sizes="(max-width: 710px) 300px,
+                        (max-width: 991px) 320px,
+                        400px"
+                    />
+                  </a>
+                </div>
+                <h3>Tic Tac Toc</h3>
+                <a href="/project"
+                  >KNOW MORE <span class="pointer">&raquo;</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="third">
+          <div class="rectangle1"></div>
+          <div class="container">
+            <div class="row title__h2 two">
+              <div>
+                <h2 class="sub__title">
+                  Let's work together on your next project
+                </h2>
+                <p>
+                  Get in touch today and I'll send a proposal and a Getting
+                  Started guide which answers many of the common questions I
+                  receive from potential clients, including my hourly rate and
+                  the process of our working together.
+                </p>
+              </div>
+              <div>
+                <a class="btn" href="/contact">CONTACT</a>
+              </div>
+            </div>
+
+            <%- include("./partials/bodynav.ejs") %>
+          </div>
+        </section>
+      </main>
+
+      <%- include("./partials/footer.ejs") %> <%-
+      include("./partials/button.ejs") %>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

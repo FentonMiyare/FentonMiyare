@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("./partials/head.ejs") %>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="row">
+          <!--div class="my__image">
+            <img srcset="./image/image-victor-glover.png" src="./image/image-victor-glover.png" alt="profile image">
+          </div-->
+          <div class="header__wrapper">
+            <h1 class="small__header">Hello, I'm Fenton</h1>
+            <h2 class="main__header">Contact Me</h2>
+            <p>Looking for a Developer and Design partner? You found me.</p>
+            <div class="main__btn">
+              <a class="btn" href="/about">About Me</a>
+            </div>
+            
+            <div class="socials header__socials">
+              <ul>
+                <li><a
+                  href="https://www.linkedin.com/in/fenton-miyare-89125696"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <img class="svg1" srcset="./svg/icon/linkedin.svg" src="./svg/icon/linkedin.svg" alt="LinkedIn">
+                </a></li>
+                <li><a 
+                  href="https://www.facebook.com/fenton.miyare"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="svg1" srcset="./svg/icon/facebook.svg" src="./svg/icon/facebook.svg" alt="Facebook">
+                </a></li>
+                <li><a 
+                  href="https://pin.it/1bNhsnF"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="svg1" srcset="./svg/icon/pinterest.svg" src="./svg/icon/pinterest.svg" alt="Pinterest">
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <%- include("./partials/nav.ejs") %>
+    
+    <main>
+      <section class="second" id="jumplink">
+        <div class="contact__rect"></div>
+        <div class="container">
+          <h2 class="m2rem">What are the steps involved</h2>
+          <p class="m2rem">You are one step closer to building your perfect product</p>
+          <div class="row">
+            <div class="list__container">
+              <div class="container__line"></div>
+                <ul class="container__items">
+                  <li class="container__item">
+                    <div class="container__top">
+                      <div class="container__circle">
+                      </div>
+                      <div class="container__title">
+                        <h3>1. I'll prepare a proposal</h3>
+                      </div>
+                    </div>
+                      <!-- The description -->
+                  <div class="container__desc">
+                    <p>Required scope, timeline and approximate price will be provided if you provide me will the detailed information about the project.</p>
+                  </div>
+              </li>
+              <li class="container__item">
+                <div class="container__top">
+                  <div class="container__circle">
+                  </div>
+                  <div class="container__title">
+                    <h3>2. Together we discuss it</h3>
+                  </div>
+                </div>
+                <div class="container__desc">
+                  <p>Let us get acquainted and discuss all the possible variants and options. Google hangouts or Skype usually works great.</p>
+                </div>
+              </li>
+              <li class="container__item">
+                <div class="container__top">
+                  <div class="container__circle">
+                  </div>
+                  <div class="container__title">
+                    <h3>3. Let's start building</h3>
+                  </div>
+                </div>
+                <div class="container__desc">
+                  <p>When the contract is signed, and all goals are set, I can then start the first sprint.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        <!--/div>
+      </section>
+      <section-->
+          <div class="experience">
+            <div id="contactForm" class="contactForm">
+              <div id="formHeader" class="formHeader">
+                <h1 id="message"></h1>
+                <div class="form__div">
+                  <img class="svg1" srcset="./svg/email-mail-svgrepo-com.svg" src="" src="./svg/email-mail-svgrepo-com.svg" alt="svg">
+                  <p>Write here a few words about your project and I'll prepare a proposal for you within 24 hours</p>
+                </div>
+              </div>
+              <div id="formBody" class="formBody">
+                <form method="POST" name="contactForm">
+                  <div class="inputContainer">
+                    <label for="userName">
+                      <i class="fa fa-lg fa-fw fa-user"></i>
+                    </label>
+                    <input name="name" id="userName" type="text" placeholder="John Smith">
+                  </div>
+                  <div class="inputContainer">
+                    <label for="userEmail">
+                      <i class="fa fa-lg fa-fw fa-envelope"></i>
+                    </label>
+                    <input name="email" id="userEmail" type="email" placeholder="jsmith@domain.com">
+                  </div>
+                  <div class="inputContainer">
+                    <label for="subject">
+                      <i class="fa fa-lg fa-fw fa-envelope"></i>
+                    </label>
+                    <input name="subject" id="userName" type="text" placeholder="Subject">
+                  </div>
+                  <div class="inputContainer">
+                    <textarea name="feedback" id="userMessage" rows="8" placeholder="Tell me all about it.."></textarea>
+                  </div>
+                  <input type="hidden" name="_url" value="/contact">
+                  <input type="hidden" name="_template" value="table">
+                  <input id="submitBtn" class="submitBtn" type="submit" value="Send">
+                </form>
+              </div>
+            </div>
+  <!--center>
+    <p><em>NOTE: blah blah</em></p>
+  </center-->
+          </div>
+        </div>
+      </section>
+      
+      <section class="third">
+        <div class="rectangle1"></div>
+        <div class="container">
+          <h2 class="sub__title">get in touch.</h2>
+            <p>Get in touch today and I'll send a proposal and a Getting Started guide which answers many of the common questions I receive from potential clients, including my hourly rate and the process of our working together.</p>
+          <div class="row title__h2 two">
+            <div>
+              <p>6433 Champion Grandview Way Building 1, Austin, TX 78750</p>
+            </div>
+            <div>
+              <a class="auth" href="mailto: fmiyare@gmail.com" target="_blank" rel="noopener noreferrer">fmiyare@gmail.com</a>
+              <a class="auth" href="tel:+254712679390" target="_blank" rel="noopener noreferrer">7 12 679 390</a>
+            </div>
+          </div>
+          
+          <%- include("./partials/bodynav.ejs") %>
+        </div>
+      </section>
+    </main>
+    
+    <%- include("./partials/footer.ejs") %>
+    
+    <%- include("./partials/button.ejs") %>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

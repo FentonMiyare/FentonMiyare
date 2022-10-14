@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("./partials/head.ejs") %>
+  <link rel="stylesheet" href="css/faq.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <div class="wrapper">
+  
+  <%- include("./partials/nav.ejs") %>
+  
+  <div class="faq">
+    <h1>FAQ's</h1>
+    <div class="search-wrapper">
+      
+      <div class="input-holder">
+        <input type="text" id="myInput" class="search-input" onkeyup="mySearchFunction()" placeholder="Search/Show FAQ's" />
+        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+      </div>
+      <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+  </div>
+  
+  <section class="content">
+    <div class="accordion">
+      <!--div class="accordion__block-title">
+        Only one item can be opened
+      </div-->
+      <ul id="stateList">
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>How much does a new website cost?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>Every website is unique and requires different components; I design and develop custom websites specifically for your small business. I’ll ask a lot of questions, assess your needs, and give you a quote based on that assessment. Most of my sites run in the $2,000 range, but can be more or less depending on needs.</p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>How long will it take to get a new website?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>The development process depends on the package you choose and your requirements. On average, a typical project can take between 25 – 35 working days. However, this is my net development time and in most cases projects last for longer due to the clients feedback or approval time. To get an accurate timeline for your project, contact me with all your requirements. How much input you can provide during the initial stages, will affect the speed of completion.</p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+        <input type="radio" name="accordion">
+        <div class="accordion__title"><h3>Do I have to be local to work with you?</h3></div>
+        <div class="accordion__content">
+          <div>
+            <p>Nope! I work with clients all over the world. Distance is no challenge in today’s virtual world. My whole team works remotely, allowing us to find the absolute best team for the business. I provide 24 hour virtual support online by email, phone and chat (Skype, MSN, YIM).<p>
+          </div>
+        </div>
+      </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+        <input type="radio" name="accordion">
+        <div class="accordion__title"><h3>Will I be able to update the site myself when it’s finished?</h3></div>
+        <div class="accordion__content">
+          <div>
+            <p>Yes! I love it when my clients take control of their website and learn to manage it on their own. I’ll provide you with a set of comprehensive video tutorials to help you learn your way around, as well provide you with a training session to help get you on your way. (Note: I love to answer your questions!)<p>
+          </div>
+        </div>
+      </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>Will you maintain my site for me?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>I can! I provide on-going support for many of my clients.<p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>When do I pay?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs. I understand that this is a big investment and want to help you budget for the expense in whatever way possible. Please read the <a href="/paymentpolicy">payment policy</a> for mor details.
+                I accept checks, PayPal, and all major credit cards.<p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>How much input do I have in the process?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>A lot! Your input and feedback is crucial to this process. I’ll start with a lot of questions about your needs, your likes, your wants and work with you to develop just the right look and functionality.<p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>Who writes the content for the site?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>Usually that is you. You are the expert on your business, so it’s usually best if it comes from you. If you need help, I can recommend copywriters who can help clean up or write original content for you at an additional cost.<p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>Where should my website be hosted?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>Hosting is super important! When it comes to hosting, you get what you pay for. I’ve developed a list of my absolute favorite hosts to help you find the right host at the right price. Check out our <a href="/hostinglist">list</a>.<p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>What if I need help on my site down the road?</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p>I am only an email away! I'm always here to help you as much or as little as you need, and I won’t disappear once the site is launched. I’ve been doing this for many years, so I ain’t going anywhere anytime soon.<p>
+              </div>
+            </div>
+          </label>
+        </li >
+        <!--li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>Prototype</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p><p>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="sList__item">
+          <label class="accordion__item">
+            <input type="radio" name="accordion">
+            <div class="accordion__title"><h3>Prototype</h3></div>
+            <div class="accordion__content">
+              <div>
+                <p><p>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </label>
+        </li-->
+      </ul>
+    </div>
+  </section>
+  
+  <%- include("./partials/button.ejs") %>
+  </div>
+  
+  <script src="js/faq.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
