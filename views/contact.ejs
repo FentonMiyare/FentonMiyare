@@ -116,6 +116,7 @@
               </div>
               <div id="formBody" class="formBody">
                 <form method="POST" name="contactForm">
+                  <input type="hidden" name="_url" value="https://fentonmiyare.herokuapp.com/contact">
                   <div class="inputContainer">
                     <label for="userName">
                       <i class="fa fa-lg fa-fw fa-user"></i>
@@ -137,7 +138,6 @@
                   <div class="inputContainer">
                     <textarea name="feedback" id="userMessage" rows="8" placeholder="Tell me all about it.."></textarea>
                   </div>
-                  <input type="hidden" name="_url" value="/contact">
                   <input type="hidden" name="_template" value="table">
                   <input id="submitBtn" class="submitBtn" type="submit" value="Send">
                 </form>
