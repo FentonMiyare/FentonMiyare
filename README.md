@@ -1,6 +1,6 @@
 # My portfolio project
 
-Hi, i'm Fenton Miyare and this is my flagship [Portfolio Project] where I showcase some of my skills to potential clients. I have endeavored to build realistic projects for this purpose.
+👋 Welcome to my GitHub page! I'm Fenton, a versatile full-stack developer with expertise in JavaScript and its popular front-end frameworks like React.js, Svelte.js, and Vue.js. I thrive in creating seamless web experiences using Next.js and Node.js. With years of experience in Linux environments, I bring excellent server and database administration skills to the table. Through this platform, I aim to showcase my diverse skill set and highlight the innovative projects I've worked on. Feel free to explore my repositories and discover the code that powers impactful web solutions. Let's build something amazing together!
 
 ## Table of contents
 
